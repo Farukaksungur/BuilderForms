@@ -22,6 +22,26 @@ namespace BuilderForms.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult Create(Product product)
+        {
+            //Kayıt İşlemi Yap
+            
+            return View();
+        }
+        [HttpGet]
+        public IActionResult Create()
+        {
+            
+            return View();
+        }
+        [HttpGet]
+        public IActionResult Search(string q)
+        {
+            //Gelen q Değeri ile Search işlemleri Yapılır
+            return View();
+        }
+
 
         public IActionResult Privacy()
         {
