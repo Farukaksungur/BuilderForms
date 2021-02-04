@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderForms", "BuilderForms\BuilderForms.csproj", "{1BC3245B-F178-4045-9CC3-2DD38FB679CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BC3245B-F178-4045-9CC3-2DD38FB679CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BC3245B-F178-4045-9CC3-2DD38FB679CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BC3245B-F178-4045-9CC3-2DD38FB679CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BC3245B-F178-4045-9CC3-2DD38FB679CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E1075EA-EB4F-4B26-BC84-C4D83B091AE1}
+	EndGlobalSection
+EndGlobal
