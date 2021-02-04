@@ -1,11 +1,10 @@
 ﻿using BuilderForms.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace BuilderForms.Controllers
 {
@@ -17,17 +16,18 @@ namespace BuilderForms.Controllers
         {
             _logger = logger;
         }
-
+        [HttpGet]
         public IActionResult Index()
         {
-            return View();
+            return View(ProductRepostory.Products);
         }
         [HttpPost]
         public IActionResult Create(Product product)
         {
-            //Kayıt İşlemi Yap
-            
-            return View();
+
+            ProductRepostory.AddProduct(product);
+
+            return RedirectToAction("Index");
         }
         [HttpGet]
         public IActionResult Create()
@@ -38,8 +38,14 @@ namespace BuilderForms.Controllers
         [HttpGet]
         public IActionResult Search(string q)
         {
-            //Gelen q Değeri ile Search işlemleri Yapılır
-            return View();
+            if (string.IsNullOrWhiteSpace(q))
+            {
+                return View();
+            }
+            else
+            {
+                return View("Index", ProductRepostory.Products.Where(i => i.Name.Contains(q)));
+            }
         }
 
 

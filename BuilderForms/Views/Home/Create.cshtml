@@ -5,17 +5,26 @@
             <input asp-for="Name" class="form-control" />
 
             <label for="Desc">Description</label>
-            <input  asp-for="Desc"  class="form-control" />
+            <input asp-for="Desc" class="form-control" />
 
             <label for="Price">Price</label>
-            <input  asp-for="Price"  class="form-control" />
+            <input asp-for="Price" class="form-control" />
+
+            <label for="Category">Category</label>
+            <select asp-for="Category" class="form-control">
+                <option selected disabled>Select Category</option>
+                <option selected value="Category 1">Category 1</option>
+                <option value="Category 2">Category 2</option>
+                <option value="Category 3">Category 3</option>
+                <option value="Category 4">Category 4</option>
+            </select>
 
             <label for="approved">Approved</label>
             <div class="form-check">
-                <input  class="form-check-input"  asp-for="IsAppored" >           
+                <input class="form-check-input" asp-for="IsAppored">
                 is Approved
             </div>
             <br />
-            <input type="submit"  value="Submit" class="btn btn-primary btn-block" />
+            <input type="submit" value="Submit" class="btn btn-primary btn-block" />
         </div>
     </form>
